@@ -69,12 +69,11 @@ const Skills = () => {
 
   ]
   const { handleImageLoad } = useOutletContext()
- const imgRef = useRef(null);
 
   useEffect(() => {
-    if (imgRef.current && imgRef.current.complete) {
-      handleImageLoad()
-    }
+      setTimeout(()=>{
+          handleImageLoad()
+      },3000)
   }, []);
 
   return (
@@ -84,8 +83,6 @@ const Skills = () => {
           src="/images/main.jpg"
           alt="bg"
           className="hidden"
-          onLoad={handleImageLoad}
-          ref={imgRef}
         />
         <div className="banner">
           <div className="slider" style={{"--quantity":12}}>
