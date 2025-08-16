@@ -1,0 +1,88 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 15%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 30s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  background-color: rgba(256, 256, 256, 0.1);
+  backdrop-filter: blur(10px);
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(400px);
+}
+
+@keyframes spinX {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+/* موبایل */
+@media screen and (max-width: 480px) {
+  .banner .slider {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+
+    animation: spinX 40s linear infinite;
+  }
+  .banner .slider .item {
+    background-color: rgba(256, 256, 256, 0.1);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    inset: 0;
+    transform: rotateX(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(400px);
+  }
+}
+
+/* تبلت عمودی */
+@media screen and (min-width: 481px) and (max-width: 800px) and (orientation: portrait) {
+  .banner .slider {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+
+    animation: spinX 30s linear infinite;
+  }
+  .banner .slider .item {
+    position: absolute;
+    background-color: rgba(256, 256, 256, 0.1);
+    backdrop-filter: blur(10px);
+    inset: 0;
+    transform: rotateX(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(400px);
+  }
+}
