@@ -72,7 +72,6 @@ const Skills = () => {
  const imgRef = useRef(null);
 
   useEffect(() => {
-    console.log("test")
     if (imgRef.current && imgRef.current.complete) {
       handleImageLoad()
     }
@@ -91,7 +90,7 @@ const Skills = () => {
         <div className="banner">
           <div className="slider" style={{"--quantity":12}}>
             {skills.map((item,index) => {
-              return <SkillsCard bgColor={item.color} title={item.title} position={index+1} src={item.img} />;
+              return <SkillsCard key={index} bgColor={item.color} title={item.title} position={index+1} src={item.img} />;
             })}
           </div>
         </div>

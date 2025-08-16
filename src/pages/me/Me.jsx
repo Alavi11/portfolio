@@ -7,7 +7,6 @@ const Me = () => {
   const imgRef = useRef(null);
 
   useEffect(() => {
-    console.log("test");
     if (imgRef.current && imgRef.current.complete) {
       handleImageLoad();
     }
