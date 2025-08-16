@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -51,7 +51,6 @@
     width: 200px;
     height: 200px;
     top: 30%;
-
     animation: spinX 40s linear infinite;
   }
   .banner .slider .item {
