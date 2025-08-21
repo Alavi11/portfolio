@@ -63,7 +63,7 @@ const HeaderMobile = () => {
         >
           <div className="w-full h-[100px] flex items-center justify-end pr-5 text-white text-3xl">
             <FaLongArrowAltLeft
-              className="hover:cursor-pointer hidden max-[325px]:block"
+              className="hover:cursor-pointer hidden max-[390px]:block"
               onClick={() => setShowMenu(false)}
             />
           </div>
