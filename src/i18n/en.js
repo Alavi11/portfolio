@@ -1,0 +1,116 @@
+// src/i18n/en.js
+const en = {
+  id: "en",
+  label: "EN",
+  direction: "ltr",
+  name: "English",
+  ui: {
+    skills: "Skills",
+    about: "About",
+    projects: "Projects",
+    contact: "Contact",
+    theme: "Theme",
+    language: "Language",
+    dockTooltip: "Click to open",
+  },
+  about: {
+    title: "Ehsan Alavi",
+    subtitle: "Front-End Developer",
+    body: `I'm a frontend developer who loves building playful, animated and non-boring interfaces.
+Instead of classic landing pages, I enjoy crafting experiences that feel like real apps or even an operating system.
+
+React, Tailwind and modern tooling are my favourite playground.
+If you care about micro-interactions, animations and details, we’re already on the same page.`,
+  },
+  skills: {
+    title: "Skills",
+    categories: [
+      {
+        title: "Front End",
+        items: [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "PWA",
+          "Socket-io",
+          "Tailwind",
+          "Axios",
+          "HTML",
+          "CSS",
+          "Vite",
+        ],
+      },
+      {
+        title: "Tooling",
+        items: ["Git", "GitHub", "Figma", "REST APIs", "Vercel"],
+      },
+    ],
+  },
+  projects: {
+    title: "Projects",
+    hint: "Click on the images",
+    items: [
+      {
+        id: 1,
+        name: "In The Garden Game",
+        shortDescription:
+          "Implementation of the front-end for the network-based game In the Garden and full front-end integration within a Telegram bot (purchasing farms, building storage, inviting friends using referral codes as downline members and receiving rewards, accelerating farm productivity, creating a wallet, and sending/receiving tokens between in-game accounts, etc.).",
+        technologies: ["React", "TS", "Vite", "Tailwind", "Framer Motion"],
+        images: [
+          "/images/p-1/1 (1).jpg",
+          "/images/p-1/1 (2).jpg",
+          "/images/p-1/1 (3).jpg",
+          "/images/p-1/1 (4).jpg",
+          "/images/p-1/1 (5).jpg",
+          "/images/p-1/1 (6).jpg",
+          "/images/p-1/1 (7).jpg",
+          "/images/p-1/1 (8).jpg",
+          "/images/p-1/1 (9).jpg",
+          "/images/p-1/1 (10).jpg",
+          "/images/p-1/1 (12).jpg",
+          "/images/p-1/1 (13).jpg",
+          "/images/p-1/1 (14).jpg",
+          "/images/p-1/1 (15).jpg",
+          "/images/p-1/1 (16).jpg",
+          "/images/p-1/1 (17).jpg",
+          "/images/p-1/1 (18).jpg",
+          "/images/p-1/1 (19).jpg",
+          "/images/p-1/1 (20).jpg",
+          "/images/p-1/1 (21).jpg",
+          "/images/p-1/1 (22).jpg",
+        ],
+      },
+      {
+        id: 2,
+        name: "E-Commerce and Gaming App",
+        shortDescription:
+          "Complete design of the front-end and back-end for an online, real-time Checkers game using Socket.io, including league creation, player ranking, and promotion to higher leagues, etc. Design of an e-commerce website and integration with an API.",
+        technologies: [
+          "React",
+          "PWA",
+          "Socket-io",
+          "Tailwind",
+          "Framer Motion",
+        ],
+        images: ["/projects/dashboard-1.png", "/projects/dashboard-2.png"],
+      },
+    ],
+  },
+  contact: {
+    title: "Contact",
+    subtitle: "Open for exciting collaborations.",
+    fields: {
+      name: "Name",
+      email: "Email",
+      message: "Message",
+      send: "Send",
+    },
+    info: {
+      emailLabel: "Email",
+      locationLabel: "Location",
+      locationValue: "Remote / Worldwide",
+    },
+  },
+};
+
+export default en;

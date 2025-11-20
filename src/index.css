@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: vazir; 
+  src: url("/fonts/Vazir.ttf");
+}
+
+html[dir="rtl"] {
+  font-family: vazir
+}
+
+
+:root {
+  --bg: #020617;
+  --bg-soft: #020617;
+  --panel: #020617;
+  --panel-soft: #020617;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56,189,248,0.15);
+  --accent-strong: rgba(56,189,248,0.6);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border-subtle: rgba(148,163,184,0.25);
+}
+
+/* OCEAN */
+.theme-ocean {
+  --bg: #020617;
+  --bg-soft: #020617;
+  --panel: #020617;
+  --panel-soft: #020617;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56,189,248,0.15);
+  --accent-strong: rgba(56,189,248,0.6);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border-subtle: rgba(148,163,184,0.25);
+}
+
+/* PURPLE */
+.theme-purple {
+  --bg: #020617;
+  --bg-soft: #020617;
+  --panel: #020617;
+  --panel-soft: #020617;
+  --accent: #a855f7;
+  --accent-soft: rgba(168,85,247,0.18);
+  --accent-strong: rgba(168,85,247,0.65);
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --border-subtle: rgba(148,163,184,0.3);
+}
+
+/* EMERALD */
+.theme-emerald {
+  --bg: #022c22;
+  --bg-soft: #022c22;
+  --panel: #022c22;
+  --panel-soft: #022c22;
+  --accent: #34d399;
+  --accent-soft: rgba(52,211,153,0.16);
+  --accent-strong: rgba(52,211,153,0.7);
+  --text: #ecfdf5;
+  --muted: #a7f3d0;
+  --border-subtle: rgba(74,222,128,0.3);
+}
+
+/* SUNSET */
+.theme-sunset {
+  --bg: #111827;
+  --bg-soft: #0b1120;
+  --panel: #020617;
+  --panel-soft: #020617;
+  --accent: #fb7185;
+  --accent-soft: rgba(251,113,133,0.18);
+  --accent-strong: rgba(251,113,133,0.7);
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --border-subtle: rgba(148,163,184,0.25);
+}
+
+body {
+  @apply bg-black;
+}
+
+html[dir="ltr"] body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+}
+
+.mac-gradient {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(244,63,94,0.30), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(59,130,246,0.30), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(45,212,191,0.30), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(251,191,36,0.25), transparent 55%);
+}
+
+.backdrop-glass {
+  backdrop-filter: blur(26px);
+}
+
+.mac-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mac-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mac-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(148,163,184,0.35);
+  border-radius: 999px;
+}
+
+
+html.theme-ocean .mac-gradient {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(56,189,248,0.40), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(8,47,73,0.65), transparent 55%),
+    url("/images/os-bg-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+html.theme-purple .mac-gradient {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(168,85,247,0.40), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(30,64,175,0.60), transparent 55%),
+    url("/images/os-bg-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+html.theme-emerald .mac-gradient {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(16,185,129,0.45), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(4,120,87,0.70), transparent 55%),
+    url("/images/os-bg-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+html.theme-sunset .mac-gradient {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(248,113,113,0.40), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(234,179,8,0.55), transparent 55%),
+    url("/images/os-bg-4.png");
+  background-size: cover;
+  background-position: center;
+}
+

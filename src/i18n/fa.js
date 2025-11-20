@@ -1,0 +1,118 @@
+// src/i18n/fa.js
+const fa = {
+  id: "fa",
+  label: "FA",
+  direction: "rtl",
+  name: "فارسی",
+  ui: {
+    skills: "مهارت‌ها",
+    about: "درباره من",
+    projects: "پروژه‌ها",
+    contact: "تماس با من",
+    theme: "تم",
+    language: "زبان",
+    dockTooltip: "برای باز کردن کلیک کنید",
+  },
+  about: {
+    title: "احسان علوی",
+    subtitle: "برنامه نویس فرانت‌اند",
+    body: `من یک فرانت‌اند دولوپر هستم که عاشق ساخت رابط‌های کاربری خلاقانه، انیمیشنی و متفاوت است. 
+ترجیح می‌دهم به جای لندینگ پیج‌های تکراری، تجربه‌های تعاملی شبیه اپلیکیشن و سیستم‌عامل بسازم.
+
+تکنولوژی‌های مورد علاقه‌ام React, Tailwind و دنیای ابزارهای مدرن فرانت‌اند است. 
+اگر دنبال کسی هستید که جزئیات UI و UX برایش مهم باشد، اینجا جایی است که باید باشید :)`,
+  },
+  skills: {
+    title: "مهارت‌ها",
+    categories: [
+      {
+        title: "فرانت‌اند",
+        items: [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "PWA",
+          "Socket-io",
+          "Tailwind",
+          "Axios",
+          "HTML",
+          "CSS",
+          "Vite",
+        ],
+      },
+      {
+        title: "ابزارها",
+        items: ["Git", "GitHub", "Figma", "REST APIs", "Vercel"],
+      },
+    ],
+  },
+  projects: {
+    title: "پروژه‌ها",
+    hint: "روی تصاویر کلیک کنید",
+    items: [
+      {
+        id: 1,
+        name: "In The Garden Game",
+        shortDescription:
+          "پیاده سازی فرانت بازی شبکه ای in the Garden و نمایش فرانت تحت ربات تلگرام به صورت کامل.(خرید مزرعه ، ساخت انبار ، دعوت از دوستان با کد رفرال به عنوان زیرمجموعه و دریافت جایزه و کارکردن سریعتر مزرعه ، ساخت کیف پول و ارسال و دریافت توکن ها بین حساب های موجود در بازی و ...).",
+        technologies: ["React", "TS", "Vite", "Tailwind", "Framer Motion"],
+        images: [
+          "/images/p-1/1 (1).jpg",
+          "/images/p-1/1 (2).jpg",
+          "/images/p-1/1 (3).jpg",
+          "/images/p-1/1 (4).jpg",
+          "/images/p-1/1 (5).jpg",
+          "/images/p-1/1 (6).jpg",
+          "/images/p-1/1 (7).jpg",
+          "/images/p-1/1 (8).jpg",
+          "/images/p-1/1 (9).jpg",
+          "/images/p-1/1 (10).jpg",
+          "/images/p-1/1 (11).jpg",
+          "/images/p-1/1 (12).jpg",
+          "/images/p-1/1 (13).jpg",
+          "/images/p-1/1 (14).jpg",
+          "/images/p-1/1 (15).jpg",
+          "/images/p-1/1 (16).jpg",
+          "/images/p-1/1 (17).jpg",
+          "/images/p-1/1 (18).jpg",
+          "/images/p-1/1 (19).jpg",
+          "/images/p-1/1 (20).jpg",
+          "/images/p-1/1 (21).jpg",
+          "/images/p-1/1 (22).jpg",
+          "/images/p-1/1 (24).jpg",
+        ],
+      },
+      {
+        id: 2,
+        name: "Shopping and Gaming App",
+        shortDescription:
+          "طراحی کامل فرانت و بکند بازی checkers ، به صورت تحت وب و real-time با استفاده از socket-io ، به صورت برگزاری لیگ و ارتقای افراد به لیگ بالاتر و ... . طراحی سایت فروشگاهی و اتصال به API.",
+        technologies: [
+          "React",
+          "PWA",
+          "Socket-io",
+          "Tailwind",
+          "Framer Motion",
+        ],
+        images: ["/projects/dashboard-1.png", "/projects/dashboard-2.png"],
+      },
+    ],
+  },
+  contact: {
+    title: "تماس با من",
+    subtitle: "برای همکاری‌های جذاب در دسترس هستم.",
+    fields: {
+      name: "نام",
+      email: "ایمیل",
+      message: "پیام",
+      send: "ارسال",
+    },
+    info: {
+      emailLabel: "ایمیل",
+      locationLabel: "موقعیت",
+      locationValue: "Remote / جهان",
+    },
+  },
+};
+
+export default fa;
