@@ -10,6 +10,7 @@ export default function Skills() {
   const { skills } = getT(lang);
 
   const mainSkills = [
+    'Next',
     'React',
     'TypeScript',
     'JavaScript (ESNext)',

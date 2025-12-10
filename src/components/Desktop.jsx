@@ -19,6 +19,12 @@ const Desktop = () => {
   const apps = useMemo(
     () => [
       {
+        id: "Mac",
+        label: "OS",
+        color: "#fff",
+        icon: <img src="/images/mac.png" />,
+      },
+      {
         id: "about",
         label: lang.ui?.about || "About",
         color: "#ba7200",
@@ -76,24 +82,26 @@ const Desktop = () => {
   };
 
   const openApp = (id) => {
-    setWindows((prev) => {
-      const exists = prev.find((w) => w.id === id);
-      let next = prev;
+    if (id !== "Mac") {
+      setWindows((prev) => {
+        const exists = prev.find((w) => w.id === id);
+        let next = prev;
 
-      if (!exists) {
-        next = [
-          ...prev,
-          { id, isOpen: true, isMinimized: false, zIndex: zCounter + 1 },
-        ];
-      } else {
-        next = prev.map((w) =>
-          w.id === id ? { ...w, isOpen: true, isMinimized: false } : w
-        );
-      }
+        if (!exists) {
+          next = [
+            ...prev,
+            { id, isOpen: true, isMinimized: false, zIndex: zCounter + 1 },
+          ];
+        } else {
+          next = prev.map((w) =>
+            w.id === id ? { ...w, isOpen: true, isMinimized: false } : w
+          );
+        }
 
-      return next;
-    });
-    bringToFront(id);
+        return next;
+      });
+      bringToFront(id);
+    }
   };
 
   const closeApp = (id) => {

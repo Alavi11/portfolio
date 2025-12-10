@@ -79,8 +79,8 @@ export default function Contact() {
           </button>
 
           <p className="text-[0.7rem] text-muted text-center">
-            {contact.direct}{' '}
-            <span className="text-accent-soft">yourmail@example.com</span>{' '}
+            {contact.direct}
+            <span className="text-accent-soft">e.alavi1380@gmail.com</span>
             {contact.direct2}
           </p>
         </motion.form>

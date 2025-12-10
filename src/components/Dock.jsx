@@ -42,7 +42,7 @@ export default function Dock({ apps, activeApp, onOpenApp }) {
           mouseLeft.set(-Infinity);
           mouseRight.set(-Infinity);
         }}
-        className="w-[300px] hover:w-[400px] transition-all duration-500 rounded-2xl  flex items-center justify-center px-1 py-3 gap-5 relative bg-white/10 backdrop-blur-[20px]"
+        className="w-[350px] hover:w-[450px] transition-all duration-500 rounded-2xl  flex items-center justify-center px-1 py-3 gap-5 relative bg-white/10 backdrop-blur-[20px]"
       >
 
         {apps.map((app, index) => (
@@ -93,7 +93,7 @@ function DynamicAppIcon({ mouseLeft, app, onClick, isActive, index }) {
           <span>
             <motion.button
               ref={ref}
-              style={{ x: xSpring, scale: scaleSpring, y , backgroundColor:app.color}}
+              style={{ x: xSpring, scale: scaleSpring, y , backgroundColor:app?.color}}
               onClick={() => {
                 onClick();
                 animate(y, [0, -40, 0], {
@@ -103,7 +103,7 @@ function DynamicAppIcon({ mouseLeft, app, onClick, isActive, index }) {
                 });
               }}
               className={`aspect-square w-12 rounded-2xl shadow-xl origin-bottom 
-                flex items-center justify-center text-xl border border-white/10 
+                flex items-center justify-center text-xl
                 bg-opacity-90`}
                 
             >
